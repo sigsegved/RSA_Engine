@@ -10,26 +10,27 @@
 
 mpz_t rand_int,p,p1,q,q1,m,n,d,e;
 
-char *rsa_encrypt(char *buff) {
-	char *ebuff;
+size_t rsa_encrypt(char *buff, char **ebuff) {
+	size_t size;
 	mpz_t M,C;
 	mpz_init(M);
 	mpz_init(C);
 	mpz_import(M,128,1,1,0,0,buff);
 	mpz_powm(C,M,e,n);
-	mpz_export(ebuff,NULL,1,1,0,0,C);
-	return ebuff;
+	(*ebuff) = mpz_export(NULL,&size,1,1,0,0,C);
+	//printf("EMSG : %s \n",mpz_get_str(ebuff, 16, C));
+	//printf("EMSG : %s \n",ebuff);
+	return size;
 }
 
-char *rsa_decrypt(char *ebuff) {
-	char *buff;
-	mpz_t C,M;
-	mpz_init(C);
+size_t rsa_decrypt(char *ebuff, size_t size, char **dbuff) {
+	mpz_t M,C;
 	mpz_init(M);
-	mpz_import(C,128,1,1,0,0,ebuff);
+	mpz_init(C);
+	mpz_import(C,size,1,1,0,0,ebuff);
 	mpz_powm(M,C,d,n);
-	mpz_export(buff,NULL,1,1,0,0,M);
-	return buff;
+	(*dbuff)= mpz_export(NULL,&size,1,1,0,0,M);
+	return size;
 }
 
 
@@ -95,19 +96,34 @@ key_generation () {
 	}
 
 
-#if DEBUG
+
+#if 1
+        mpz_gcd(rand_int, e, m);
+        printf("gcd(e, m) = [%s]\n", mpz_get_str(NULL, 10, rand_int));
+
 	printf("p : %s\n",mpz_get_str(NULL,10,p));
 	printf("q : %s\n",mpz_get_str(NULL,16,q));
 	printf("m : %s\n",mpz_get_str(NULL,16,m));
 	printf("n : %s\n",mpz_get_str(NULL,16,n));
-	printf("e : %s\n",mpz_get_str(NULL,10,e));
 	printf("d : %s\n",mpz_get_str(NULL,16,d));
-	printf("GCD \n");
 #endif
 
 }
 
 int main() {
-	printf("hello world\n");
+	char *arr;
+	char *emsg;
+	char *dmsg;
+	size_t esize,dsize;
+	arr = (char *)malloc(128);
+	memset(arr,0,128);
+	strcpy(arr,"this is fucked up\n");
+	key_generation();
+	esize = rsa_encrypt(arr,&emsg);
+	dsize = rsa_decrypt(emsg,esize,&dmsg);
+
+	printf("EMSG : %d : [%s]\n",(int)esize,emsg);
+	printf("DMSG : %d : [%s]\n",(int)dsize,dmsg);
+
 }
 
