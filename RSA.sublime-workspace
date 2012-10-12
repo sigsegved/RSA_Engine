@@ -1,0 +1,384 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pu",
+				"pub_key_mpz"
+			],
+			[
+				"EMS",
+				"EMSA_PKCS1_v1_5_ENCODE"
+			],
+			[
+				"si",
+				"signed_msg"
+			],
+			[
+				"pvt_",
+				"pvt_key_mpz"
+			],
+			[
+				"EM",
+				"EMSA_PKCS1_v1_5"
+			],
+			[
+				"em",
+				"emlen"
+			],
+			[
+				"x",
+				"x509_cert"
+			],
+			[
+				"c",
+				"x509_cert_decoded"
+			],
+			[
+				"pub",
+				"public_key_mpz"
+			],
+			[
+				"pvt",
+				"private_key_mpz"
+			],
+			[
+				"rsa_",
+				"rsa_encrypt"
+			],
+			[
+				"c_",
+				"c_pub_key"
+			],
+			[
+				"key",
+				"keyfile"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"enc",
+				"encode_public_key"
+			],
+			[
+				"outf",
+				"outfile_fd"
+			],
+			[
+				"key_",
+				"key_len_pv"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "genrsa.c",
+			"settings":
+			{
+				"buffer_size": 2869,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.c",
+			"settings":
+			{
+				"buffer_size": 4457,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "base64.h",
+			"settings":
+			{
+				"buffer_size": 394,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pem_der.h",
+			"settings":
+			{
+				"buffer_size": 1134,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ukay/workspace/RSA_Engine/main.c",
+		"/home/ukay/workspace/RSA_Engine/pem_der.c",
+		"/home/ukay/workspace/RSA_Engine/rsa.c",
+		"/home/ukay/workspace/RSA_Engine/rsa.h",
+		"/home/ukay/workspace/RSA_Engine/sig",
+		"/home/ukay/workspace/RSA_Engine/mysign",
+		"/home/ukay/workspace/RSA_Engine/rsa",
+		"/home/ukay/workspace/RSA_Engine/Makefile",
+		"/home/ukay/workspace/RSA_Engine/x509.c",
+		"/home/ukay/workspace/RSA_Engine/base64.c",
+		"/home/ukay/Desktop/openssl-1.0.1c/crypto/cryptlib.h",
+		"/home/ukay/workspace/RSA_Engine/verify.c",
+		"/home/ukay/workspace/RSA_Engine/x509.h",
+		"/home/ukay/workspace/RSA_Engine/base64.h",
+		"/home/ukay/workspace/RSA_Engine/genrsa.c",
+		"/home/ukay/workspace/RSA_Engine/getopt_long.c",
+		"/home/ukay/workspace/RSA_Engine/pem_der.h"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"3",
+			"pub_exp",
+			");\n",
+			"RSA",
+			"b64_encoded_pvt_key",
+			"write_private_key"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "genrsa.c",
+					"settings":
+					{
+						"buffer_size": 2869,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								896,
+								896
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.c",
+					"settings":
+					{
+						"buffer_size": 4457,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								883,
+								883
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "base64.h",
+					"settings":
+					{
+						"buffer_size": 394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128,
+								128
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pem_der.h",
+					"settings":
+					{
+						"buffer_size": 1134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								205,
+								205
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.76,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 90.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"genr",
+				"genrsa.c"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
