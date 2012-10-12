@@ -6,6 +6,5 @@ To implement RSA decryption and encryption that can use OpenSSL X509 certificate
 unzip the tar ball. 
 > cd RSA_Engine
 > make
------------------
 There should be two executable named rsa and genrsa. 
 just type ./rsa or ./genrsa to see the usage. 
